@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Tell IE use the latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the page to the width of the device and set the zoon level -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Bioinformatics Algorithms</title>
+    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">-->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+   <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+
+    <!-- Custom styles for this template-->
+    <link href="justified-nav.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+
+</head>
+<body>
+
+
+<div class="container">
+
+    <div class="masthead">
+        <h3 class="text-muted">CIS 6930, University of Florida: Bioinformatic Algorithms</h3>
+        <nav>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#ho">Home</a></li>
+
+                <li><a data-toggle="tab" href="#dl"> Downloads</a></li>
+
+                <li><a data-toggle="tab" href="#ab">Research Paper</a></li>
+                <li><a data-toggle="tab" href="#ab"></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <div class="tab-content">
+            <div id="ho" class="tab-pane fade in active">
+
+                <img src="C:\Users\Aaditya\Desktop\12.jpg" style="width:1000px;height:267px;"/>
+                <br><br><br>
+                <h3 style="font-size:140%;text-align:justify;" >The human microbiota has profound effects on health and disease.The presence of microbes is essential for health maintenance. It has been recognized that human genome is only part of our genetic composition while the human host and microbiota have coevolved. Also, the microbiome is intimately involved in the development and maintenance of the immune system. All these factors and advances in the sequencing technologies motivated the microbiome study. For the scope of this paper, we will focus on gut microbiota which represents the community of microorganisms that live in the digestive tracts of humans. We are interested in finding out how composition of gut microbiota is associated with the host's diet and the host's state of health or disease.</h3>
+
+                <div class="row" >
+                    <div class="col-lg-4">
+                        <h2 style="font-size:140%;font-weight: bold;">Members</h2>
+                        <p class="text-left" style="font-size:120%;">Aaditya Menon</p>
+                        <p class="text-left" style="font-size:120%;">Aneesh Khandekar</p>
+                        <p class="text-left" style="font-size:120%;">Atharva Borkar</p>
+                        <p class="text-left" style="font-size:120%;">Nidhi Makhijani</p>
+                        <!--<p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>-->
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 style="font-size:140%;font-weight: bold;">Biologists</h2>
+
+                        <p style="font-size:120%;">Dr. Volker Mai</p>
+                        <p style="font-size:120%;">Dr. Maria Ukhanova</p>
+                        <p style="font-size:120%;">Sheldon Waugh</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 style="font-size:140%;font-weight: bold;">Instructor</h2>
+                        <p style="font-size:120%;" ><a href="http://christinaboucher.com/teaching/" target="_blank">Dr. Christina Boucher</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+                <div id="dl" class="tab-pane fade">
+                    <h2>Human Microbiome Data</h2>
+                    <p class="lead">Download the utility software which facilitates joining of paired-end reads, creation of
+                        seq.fna files and creation of OTU tables using open, closed and De Novo picking. Please make sure you
+                    read the Instructions given below before running the software.</p>
+                    <div class="row">
+                        <div class="col-lg-2"><a class="btn btn-lg btn-success" href="#" role="button">Download</a></div>
+                        <div class="col-lg-2"><a class="btn btn-lg btn-info" href="#" role="button">Readme.txt</a></div>
+                    </div>
+
+                    <br>
+                    <h3>Requirements</h3>
+                     <h4>QIIME <br><br>
+                        Java 1.8
+                        </h4>
+
+
+                    <h3>Installations</h3>
+
+                    <h4>QIIME</h4>
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                        Windows/MAC Users</a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">Download and install the VirtualBox (VB) version for your machine here(link).https://www.virtualbox.org/wiki/Downloads
+
+                                    Download the 64-bit QIIME Virtual Box Image, which is linked from the <a href="http://qiime.org/home_static/dataFiles.html" target="_blank">QIIME Resources
+                                        page</a>  This file is large so it may take
+                                    between a few minutes to a few hours depending on your Internet connection speed. You will
+                                    need to unzip this file, which can typically be done by double-clicking on it.
+                                    <br><br>
+                                    Create a new virtual machine:<br><br>
+                                    Launch VirtualBox, and create a new machine (press the New button).
+                                    A new window will show up. Click ‘Next’.<br><br>
+                                    In this screen type QIIME as the name for the virtual machine. Then select Linux as the
+                                    Operating System, and Ubuntu (64 bit) as the version. Click Next.<br><br>
+                                    Select the amount of RAM (memory). You will need at least 3 GB, but the best option is based
+                                    on your machine. After selecting the amount of RAM, click Next.<br><br>
+                                    Select “Use existing hard drive”, and click the folder icon next to the selector (it has a green 'UP' arrow).
+                                    In the new window click ‘Add’, and locate the virtual hard drive that was downloaded in step 2.
+                                    Click Select and then click Next.<br><br>
+                                    In the new window click Finish.<br><br>
+
+                                    Double click on the new virtual machine created – it will be called QIIME – to boot it for the first time.
+                                    Review any messages that are shown, and select whatever options are best for you.<br><br>
+                                    When your new virtual machine boots, you will see a folder on the Desktop called ‘Before_you_start’.
+                                    Double click on that folder to open it, and then double click on the ‘Welcome’ file in that folder.
+                                    This will get you started with using your QIIME virtual box.</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                        Linux Users</a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">Run the following commands:
+                                    <br><br>
+                                    If you do not have pip, the easiest way to install it is by running:
+                                    <br><br>
+                                    easy_install pip
+                                    <br><br>
+                                    Or, if you are on Ubuntu, run:
+                                    <br><br>
+                                    apt-get install python-pip
+                                    <br><br>
+                                    pip install numpy <br><br>
+                                    pip install qiime
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>JAVA</h4>
+
+
+                    Make sure you have Java 1.8 in the linux environment that has QIIME.
+                    You can check the version using the following command:
+                    java -version
+                    <br><br>
+                    If you want to update, just use these command lines:
+                    sudo add-apt-repository ppa:webupd8team/java
+                    sudo apt-get update
+                    sudo apt-get install oracle-java8-installer
+                    <br><br>
+                    If you want to install java, perform the following steps:
+                    <br><br>
+                    1. Download the Oracle Java JRE for Linux here(link) http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
+                    Make sure you select the correct compressed binaries for your system architecture 32-bit or 64-bit (which end in tar.gz).
+                    <br><br>
+                    2. You can copy the file to the location where you want java to be installed.
+                    <br><br>
+                    3. Open the terminal in this location. Unpack the tarball and install the JRE with the following command:
+                    tar zxvf jre-8u<h6 style="font-weight: italics;">version</h6>-linux-x64.tar.gz
+                </div>
+
+
+
+
+            <div id="ab" class="tab-pane fade">
+                <h1>Human Microbiome Data</h1>
+                <p class="lead"> Aaditya Menon 1
+                    , Aneesh Khandekar 1
+                    , Atharva Borkar 1 and Nidhi
+                    Makhijani 1,∗
+                </p>
+
+
+                <p>1 Introduction<br><br>
+                    The human microbiome is defined as the collection of microbes - bacteria,
+                    viruses, and single-cell eukaryotes - that inhabits the human body. In a
+                    healthy human adult microbes are estimated to outnumber human cells by a
+                    ratio of ten to one, and the total number of genes in the microbiome exceeds
+                    the number of genes in the human genome by a factor of at least 200.
+                    Despite the fact that microbial cells are only one-tenth to one-hundredth
+                    the size of a human cell, they may account for up to five pounds of adult
+                    body weight.
+                    Human body is home to approximately 100 trillion bacteria and
+                    one quadrillion viruses. All of these organisms perform a multitude of
+                    functions, and need to be properly balanced and taken care of in order to
+                    maintain good health. The identity and degree of diversity of these bacteria
+                    in a single individual, their variability from person to person, and their role
+                    in disease and disease susceptibility have crucial impact on human health.
+                    Human microbiome of an individual is as unique as finger print and is
+                    often referred to as second genome.
+                    To date, researchers have been able to study limited number of
+                    individual microorganisms. It has been impossible to isolate the vast
+                    majority (>95%) of microorganisms and culture them, because the required
+                    growth conditions cannot be reproduced in the laboratory. However, recent
+                    technological advances in DNA sequencing and the development of a
+                    method known as metagenomics have now made it feasible to analyze the
+                    entire human microbiome. Metagenomics enabled researchers to find out
+                    relative abundance of the different species and discover which metabolic
+                    pathways are encoded by the organisms to gain information about their
+                    functions in the body.
+                    As stated earlier, we are interested in the gut microbiota. Healthy gut
+                    flora is largely responsible for overall health of the host. The normal human
+                    gut microbiota comprises of two major phyla, namely Bacteroidetes and
+                    Firmicutes. The normal gut microbiota imparts specific function in host
+                    nutrient metabolism, drug metabolism, maintenance of structural integrity
+                    of the gut mucosal barrier, immunomodulation, and protection against
+                    pathogens.(Sai Manasa Jandhyala et al., 2015) As the gut microbiome
+                    in particular appears to be amenable to manipulation (Manichanh et al.,
+                    2010), an ecological understanding based on these studies may hold the
+                    potential for disease treatment and, perhaps most importantly, prevention
+                    through microbiome therapeutics. Studying the gut microbiota currently
+                    consists of two major stages: (1) 16S rRNA based sequencing of bacterial
+                    gene; and (2) Bioinformatics Analysis.
+                    For the scope of this paper, we are specifically interested in exploring
+                    the microbiota dynamics in 2 individuals over the period of time. We also
+                    aim to identify events such as diarrhea, travel or antibiotic use that could
+                    have caused some dramatic distortions.
+                    <br><br>
+                    2 Related Work<br><br>
+                    Human Microbiome Project is the major contributor to the technological
+                    enhancements and achievements in studying human microbiome. It was
+                    the extension of Human genome project and was funded by Nationa
+                    l
+                    Institutes of Health with the vision to identify and characterize the
+                    microorganisms that are found in the association with both healthy and
+                    diseased humans.(The NIH HMP Working Group ., 2009) It is said that
+                    a symbiotic relationship between intestinal microbiota and the host is
+                    established soon after birth. Many factors can affect a normal pattern of
+                    intestinal colonization such as mode of delivery, type of feeding, and
+                    antibiotic exposure.(Gronlund MM ., 1999) The gut microbiota have
+                    been associated with a large array of human diseases ranging from
+                    luminal diseases (Sai Manasa Jandhyala et al., 2015) such as inflammatory
+                    bowel diseases (IBD) and irritable bowel syndrome (IBS), metabolic
+                    diseases such obesity and diabetes, allergic disease to neurodevelopmental
+                    illnesses.
+                    Study (Youmans BP et al ., 2015) reveals that the composition of the
+                    gut microbiome in healthy, diarrhea-free travelers has characteristics of a
+                    dysbiotic gut, suggesting that these alterations could be associated with
+                    factors such as travel. During this study, Firmicutes:Bacteroidetes ratios in
+                    microbiome profile were observed to be high in the travelers who developed
+                    diarrhea.
+                    Experiments have also demonstrated that the use of antibiotics does
+                    have several short and long-term implications in the ecology of the normal
+                    gut microbiota (McFall-Ngai M et al ., 2007). It is proved that multi-drug
+                    resistant bacterial genes have been prevalent for thousands of years before
+                    the advent of antibiotics, which indicates an influence of exposure to small
+                    molecules from the environment with growth inhibitory properties.
+                    Researchers observed the intestinal microbiota of subjects who have
+                    undergone colonoscopy and it was confirmed that composition of the
+                    microbiota is disturbed in patients undergoing colonoscopy (V Mai et al .,
+                    2006). Further to this study, it was found that the colonoscopy preparation
+                    did not significantly change the gut microbiota for the majority of subjects
+                    as determined by PCR-DGGE (Claire L. O'Brien et al ., 2013) and changes
+                    were as no greater than those seen in normal subjects over time.
+                    The link between gut microbiota variation and stool consistency was
+                    also investigated using Bristol Stool Scale classification, which reflects
+                    faecal water content and activity. This investigation (Doris Vandeputte
+                    et al ., 2015), has revealed a seemingly consistent association between
+                    disease and a reduction in the observed or estimated number of species in
+                    a sample, suggesting bacterial richness to be a major marker for gut health.
+                    The Prevotella (P) enterotype is more abundant in subjects with loose
+                    stool while the Ruminococcaceae-Bacteroides (RB) enterotype completely
+                    dominates the harder stool samples.
+                    QIIME is the most often used software to analyze 16S rRNA gene
+                    sequences from microbial Communities (Justin Kuczynski et al ., 2011 ).
+                    It is an acronym for Quantitative Insights Into Microbial Ecology. QIIME
+                    pipeline involves generating OTU table, picking up OTU representative,
+                    assigning taxonomic identities using reference database, creating a
+                    phylogenetic tree and producing alpha-beta diversity results.
+                    <br><br>
+                    3 Data
+                    <br><br>
+                    We have a longitudinal microbiota dataset taken from two individuals
+                    over a period of ten years. There are, in total, 89 samples that have
+                    undergone comprehensive 16S rRNA based microbiota sequencing. 16S
+                    rRNA sequencing is a common amplicon sequencing method that is
+                    useful in identifying and comparing bacteria within a given sample.
+                    Ribosomes, which are present in all living cells, function in protein
+                    synthesis machinery. Ribosomes consist of two subunits, each of which
+                    consists a protein and a type of RNA called ribosomal RNA(rRNA).
+                    Prokaryotic ribosomes consist of two subunits - 30S, the small subunit
+                    and 50S, the large subunit. While the 50S subunit is composed of two
+                    types of rRNA species, the 30S subunit consists of the 16S rRNA and
+                    21 polynucleotide chains. The genes coding for the 16S rRNA are called
+                    16S rRNA genes. The 16S rRNA gene has been widely used in the study
+                    of phylogeny and taxonomy for a number of reasons including - (i) its
+                    presence in almost all bacteria, often existing as a multigene family, or
+                    operons; (ii) the function of the 16S rRNA gene over time has not changed,
+                    suggesting that random sequence changes are a more accurate measure of
+                    time (evolution); and (iii) the 16S rRNA gene (1,500 bp) is large enough
+                    for informatics purposes. (Patel, J. B. et al.) (J. Michael Janda et al., 2007)
+                    The use of 16S rRNA genes in sequencing, therefore, helps to narrow
+                    down full length sequences to contain only 16S rRNA sequences which
+                    can then be used to identify specific microbes.
+                    In order to analyze microbial communities, our samples containing 16S
+                    rRNA sequences are assigned to Operational Taxonomic Units(OTUs).
+                    OTUs can be thought of as clusters that represent a taxonomic unit of
+                    bacteria species or genus. To assign sequences to OTUs, we first perform
+                    OTU Clustering based on similarity of the sequences. Typically, the
+                    similarity between a pair of sequences is computed as the percentage of
+                    sites that agree in a pairwise sequence alignment. A common similarity
+                    threshold used is 97%, which was derived from an empirical study
+                    that showed most strains had 97% 16S rRNA sequence similarity.
+                    (Konstantinidis et al., 2005) From each OTU cluster, a single sequence
+                    is selected as a representative sequence. This representative sequence is
+                    annotated and the annotation is applied to all the sequences within that
+                    OTU. We used three different OTU picking strategies - closed reference,
+                    DeNovo and open reference, all with QIIME.
+                    The closed reference approach involves comparing sequences against a
+                    reference sequence collection and then clustering sequences into the same
+                    OTU that are similar to the same reference sequence. Closed reference
+                    OTU picking is fully parallelizable and hence is extremely useful for
+                    large datasets. However, sequences that do not hit a sequence in the
+                    reference database are discarded and hence closed reference is not able to
+                    detect novel sequences. Defining OTUs in the closed-reference approach
+                    may also be problematic because two sequences might be 97% simila
+                    r
+                    to the same reference sequence, but they may only be 94% similar t
+                    o
+                    each other. (Sarah L. Westcott et al., 2015) Alternatively, a sequence
+                    may be equally similar to two or more reference sequences. In contrast,
+                    DeNovo clustering method uses a distance approach rather than referencebased.
+                    Sequences are clustered into an OTU based on the distances
+                    between them. DeNovo approach, therfore, clusters all the sequences but
+                    the computational cost scales quadratically with the number of unique
+                    sequences. The open-reference clustering is a combination of closedreference
+                    and denovo approaches. It clusters sequences against a reference
+                    database and sequences that do not hit a sequence, are denovo clustered.
+                    While it would seem that the open-reference approach would exploit
+                    strengths of both, the closed-reference and denovo approaches, it may run
+                    into problems due to different OTU definitons employed by the approaches.
+                    An alternative to this approach has been to classify sequences to a bacterial
+                    family or genus and then assign those sequences to OTUs within those
+                    taxonomic groups using the average linkage method. (Patrick D. Schloss
+                    et al., 2011)
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div> <!-- /container -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
