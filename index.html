@@ -34,7 +34,7 @@
 <div class="container">
 
     <div class="masthead">
-        <h3 class="text-muted">CIS 6930, University of Florida: Bioinformatic Algorithms</h3>
+        <h3 class="text-muted">CIS 6930, University of Florida: Bioinformatics Algorithms</h3>
         <nav>
             <ul class="nav nav-tabs">
                 <li class="active"><a data-toggle="tab" href="#ho">Home</a></li>
@@ -52,7 +52,7 @@
         <div class="tab-content">
             <div id="ho" class="tab-pane fade in active">
 
-                <img src="\12.jpg" style="width:1000px;height:267px;"/>
+                <img src="12.jpg" style="width:1000px;height:267px;"/>
                 <br><br><br>
                 <h3 style="font-size:140%;text-align:justify;" >The human microbiota has profound effects on health and disease.The presence of microbes is essential for health maintenance. It has been recognized that human genome is only part of our genetic composition while the human host and microbiota have coevolved. Also, the microbiome is intimately involved in the development and maintenance of the immune system. All these factors and advances in the sequencing technologies motivated the microbiome study. For the scope of this paper, we will focus on gut microbiota which represents the community of microorganisms that live in the digestive tracts of humans. We are interested in finding out how composition of gut microbiota is associated with the host's diet and the host's state of health or disease.</h3>
 
@@ -85,22 +85,28 @@
                     <h2>Human Microbiome Data</h2>
                     <p class="lead">Download the utility software which facilitates joining of paired-end reads, creation of
                         seq.fna files and creation of OTU tables using open, closed and De Novo picking. Please make sure you
-                    read the Instructions given below before running the software.</p>
+                    check the requirements given below before running the software.</p>
                     <div class="row">
-                        <div class="col-lg-2"><a class="btn btn-lg btn-success" href="#" role="button">Download</a></div>
-                        <div class="col-lg-2"><a class="btn btn-lg btn-info" href="#" role="button">Readme.txt</a></div>
+                        <div class="col-lg-2"><a class="btn btn-lg btn-success" href="OTUGenerator.zip" role="button">Download</a></div>
+                        <div class="col-lg-2"><a class="btn btn-lg btn-info" href="Manual.pdf" download role="button">Readme</a></div>
                     </div>
 
                     <br>
                     <h3>Requirements</h3>
-                     <h4>QIIME <br><br>
-                        Java 1.8
-                        </h4>
-
+                    <ul>
+                        <li>
+                            <h4>QIIME</h4>
+                        </li>
+                        <li>
+                        <h4>Java 1.8</h4>
+                        </li>
+                    </ul>
 
                     <h3>Installations</h3>
-
-                    <h4>QIIME</h4>
+                    <ul>
+                        <li>
+                            <h4>QIIME</h4>
+                        </li>
                     <div class="panel-group" id="accordion">
                         <div class="panel panel-default">
                             <div class="panel-heading">
@@ -110,30 +116,52 @@
                                 </h4>
                             </div>
                             <div id="collapse1" class="panel-collapse collapse">
-                                <div class="panel-body">Download and install the VirtualBox (VB) version for your machine <a href="https://www.virtualbox.org/wiki/Downloads"  target="_blank">here</a>
-
-                                    Download the 64-bit QIIME Virtual Box Image, which is linked from the <a href="http://qiime.org/home_static/dataFiles.html" target="_blank">QIIME Resources
-                                        page</a>  This file is large so it may take
+                                <div class="panel-body">
+                                <ul>
+                                    <li>
+                                    Download and install the VirtualBox (VB) version for your machine <a href="https://www.virtualbox.org/wiki/Downloads"  target="_blank">here</a>
+                                    </li>
+                                    <li>
+                                    Download the 64-bit QIIME Virtual Box Image, which is linked from the <a href="http://qiime.org/home_static/dataFiles.html" target="_blank">QIIME Resources page</a>  This file is large so it may take
                                     between a few minutes to a few hours depending on your Internet connection speed. You will
-                                    need to unzip this file, which can typically be done by double-clicking on it.
-                                    <br><br>
-                                    Create a new virtual machine:<br><br>
-                                    Launch VirtualBox, and create a new machine (press the New button).
-                                    A new window will show up. Click ‘Next’.<br><br>
-                                    In this screen type QIIME as the name for the virtual machine. Then select Linux as the
-                                    Operating System, and Ubuntu (64 bit) as the version. Click Next.<br><br>
-                                    Select the amount of RAM (memory). You will need at least 3 GB, but the best option is based
-                                    on your machine. After selecting the amount of RAM, click Next.<br><br>
-                                    Select “Use existing hard drive”, and click the folder icon next to the selector (it has a green 'UP' arrow).
-                                    In the new window click ‘Add’, and locate the virtual hard drive that was downloaded in step 2.
-                                    Click Select and then click Next.<br><br>
-                                    In the new window click Finish.<br><br>
-
+                                    need to unzip this file.
+                                    </li>
+                                    <li>
+                                    Create a new virtual machine:<br>
+                                    <ul>
+                                        <li>
+                                        Launch VirtualBox, and create a new machine (press the New button).
+                                        A new window will show up. Click ‘Next’.
+                                        </li>
+                                        <li>
+                                        In this screen, type <b>QIIME</b> as the name for the virtual machine. Then select Linux as the
+                                        Operating System, and Ubuntu (64 bit) as the version. Click Next.
+                                        </li>
+                                        <li>
+                                        Select the amount of RAM (memory). You will need at least 3 GB, but the best option is based
+                                        on your machine. After selecting the amount of RAM, click Next.
+                                        </li>
+                                        <li>
+                                        Select “Use existing hard drive”, and click the folder icon next to the selector (it has a green 'UP' arrow).
+                                        In the new window click ‘Add’, and locate the virtual hard drive that was downloaded in step 2.
+                                        Click Select and then click Next.
+                                        </li>
+                                        <li>
+                                        In the new window click Finish.
+                                        </li>
+                                    </ul>
+                                    <li>
                                     Double click on the new virtual machine created – it will be called QIIME – to boot it for the first time.
-                                    Review any messages that are shown, and select whatever options are best for you.<br><br>
+                                    Review any messages that are shown, and select whatever options are best for you
+                                    </li>
+                                    <li>
                                     When your new virtual machine boots, you will see a folder on the Desktop called ‘Before_you_start’.
                                     Double click on that folder to open it, and then double click on the ‘Welcome’ file in that folder.
-                                    This will get you started with using your QIIME virtual box.</div>
+                                    This will get you started with using your QIIME virtual box.
+                                    </li>
+                                </li>
+                                </ul>    
+                                </div>
                             </div>
                         </div>
                         <div class="panel panel-default">
@@ -144,55 +172,72 @@
                                 </h4>
                             </div>
                             <div id="collapse2" class="panel-collapse collapse">
-                                <div class="panel-body">Run the following commands:
-                                    <br><br>
-                                    If you do not have pip, the easiest way to install it is by running:
-                                    <br><br>
-                                    easy_install pip
-                                    <br><br>
-                                    Or, if you are on Ubuntu, run:
-                                    <br><br>
-                                    apt-get install python-pip
-                                    <br><br>
-                                    pip install numpy <br><br>
-                                    pip install qiime
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>
+                                        If you do not have pip, the easiest way to install it is by running:<br>
+                                        <b>easy_install pip</b><br>        
+                                        Or, if you are on Ubuntu, run:<br>
+                                        <b>apt-get install python-pip</b>
+                                        </li>
+                                        <br>
+                                       <li>
+                                       Now, run the following commands:<br> 
+                                        <b>pip install numpy<br>
+                                        pip install qiime</b>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <h4>JAVA</h4>
-
-
+                    <li>
+                        <h4>JAVA</h4>
+                    </li>
+                    
+                    
+                    <ul>
+                    <li>
                     Make sure you have Java 1.8 in the linux environment that has QIIME.
-                    You can check the version using the following command:
-                    java -version
-                    <br><br>
-                    If you want to update, just use these command lines:
-                    sudo add-apt-repository ppa:webupd8team/java
-                    sudo apt-get update
-                    sudo apt-get install oracle-java8-installer
-                    <br><br>
+                    You can check the version using the following command:<br>
+                    <b>java -version</b>
+                    </li>
+                    <br>
+                    <li>
+                    If you want to update, just use these command lines:<br>
+                    <b>sudo add-apt-repository ppa:webupd8team/java<br>
+                    sudo apt-get update<br>
+                    sudo apt-get install oracle-java8-installer</b>
+                    </li>
+                    <br>
+                    <li>
                     If you want to install java, perform the following steps:
-                    <br><br>
-                    1. Download the Oracle Java JRE for Linux <a href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"  target="_blank">here</a>.
+                    <ul>
+                    <li>
+                    Download the Oracle Java JRE for Linux <a href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"  target="_blank">here</a>.
                     Make sure you select the correct compressed binaries for your system architecture 32-bit or 64-bit (which end in tar.gz).
-                    <br><br>
-                    2. You can copy the file to the location where you want java to be installed.
-                    <br><br>
-                    3. Open the terminal in this location. Unpack the tarball and install the JRE with the following command:
-                    tar zxvf jre-8u<h6 style="font-weight: italics;">version</h6>-linux-x64.tar.gz
+                    </li>
+                    <li>
+                    You can copy the file to the location where you want java to be installed.
+                    </li>
+                    <li>
+                    Open the terminal in this location. Unpack the tarball and install the JRE with the following command:<br>
+                    <b>tar zxvf jre-8u<i>version</i>-linux-x64.tar.gz</b> (e.g. jre-8u<i>131</i>-linux-x64.tar.gz)
+                    </li>
+                    </ul>
+                    </li>
+                    </ul>
+                    </ul>
+
                 </div>
 
 
 
 
             <div id="ab" class="tab-pane fade">
+            <div style="padding-left:4cm; padding-right:4cm; text-align:justify">
                 <h1>Human Microbiome Data</h1>
-                <p class="lead"> Aaditya Menon 1
-                    , Aneesh Khandekar 1
-                    , Atharva Borkar 1 and Nidhi
-                    Makhijani 1,∗
-                </p>
+                <p class="lead"> Aaditya Menon, Aneesh Khandekar, Atharva Borkar and Nidhi Makhijani</p>
 
 
                 <p>1 Introduction<br><br>
@@ -360,6 +405,7 @@
 
 
                 </p>
+                </div>
             </div>
         </div>
     </div>
